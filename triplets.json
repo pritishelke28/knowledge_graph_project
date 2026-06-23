@@ -1,0 +1,47 @@
+[
+    {
+        "subject": "Elon Musk",
+        "relation": "CEO of",
+        "object": "Tesla"
+    },
+    {
+        "subject": "Tesla",
+        "relation": "headquartered in",
+        "object": "Austin, Texas"
+    },
+    {
+        "subject": "Tesla",
+        "relation": "acquired",
+        "object": "SolarCity"
+    },
+    {
+        "subject": "Google",
+        "relation": "owns",
+        "object": "YouTube"
+    },
+    {
+        "subject": "Alphabet",
+        "relation": "owns",
+        "object": "Google"
+    },
+    {
+        "subject": "Sundar Pichai",
+        "relation": "CEO of",
+        "object": "Alphabet and Google"
+    },
+    {
+        "subject": "Microsoft",
+        "relation": "acquired",
+        "object": "GitHub"
+    },
+    {
+        "subject": "Microsoft",
+        "relation": "acquired",
+        "object": "LinkedIn"
+    },
+    {
+        "subject": "Satya Nadella",
+        "relation": "CEO of",
+        "object": "Microsoft"
+    }
+]
