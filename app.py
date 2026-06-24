@@ -132,9 +132,14 @@ col1, col2 = st.columns([1, 1])
 
 with col1:
     st.subheader("💬 Query Assistant Console")
-    user_query = st.text_input("Enter your prompt (e.g., 'Summarize the text' or 'Who is the CEO of Tesla?'):", key="qa_input")
     
-    if user_query:
+    # Wrap the input and a new submit button inside a Form component
+    with st.form(key="query_form", clear_on_submit=False):
+        user_query = st.text_input("Enter your prompt (e.g., 'Summarize the text' or 'Who is the CEO of Tesla?'):")
+        submit_button = st.form_submit_button(label="🚀 Send Question")
+    
+    # Process only when the form's submit button is actively triggered
+    if submit_button and user_query:
         answer, engine_used = ask_question(user_query)
         st.info(engine_used)
         st.markdown(f"### Answer:\n{answer}")
